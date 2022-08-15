@@ -4,7 +4,7 @@ job("deploy master"){
             api.space().projects.automation.deployments.start(
                 project = api.projectIdentifier(),
                 targetIdentifier = TargetIdentifier.Key("opsi-website"),
-                version = "1.0.0",
+                version = "1.0.1",
                 // automatically update deployment status based on a status of a job
                 syncWithAutomationJob = true
         	)
